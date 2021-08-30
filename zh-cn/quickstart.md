@@ -19,7 +19,7 @@
 
 git clone https://github.com/wz930206/uniapp-ma-template.git
 
-cd vue-h5-template
+cd uniapp-ma-template
 
 npm install
 
