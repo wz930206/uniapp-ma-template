@@ -41,7 +41,7 @@
     "lint": "eslint --ext .js,.vue src",
     "lint:eslint": "eslint --cache --max-warnings 0  \"src/**/*.{vue,js}\" --fix",
     "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,css,less,scss,vue,html,md}\"",
-	"lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/"
+    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-27920200618002",
