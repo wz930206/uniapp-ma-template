@@ -10,7 +10,7 @@
 - [快速上手](/zh-cn/quickstart.md)
 - [配置多环境变量](/zh-cn/env.md)
 - [thorui 组件按需加载](/zh-cn/thorui.md)
-- [Less 全局样式](/zh-cn/sass.md)
+- [Less 全局样式](/zh-cn/less.md)
 - [Vuex 状态管理](/zh-cn/vuex.md)
 - [请求 封装及接口管理](/zh-cn/http.md)
 - [Webpack 4 vue.config.js 基础配置](/zh-cn/base.md)

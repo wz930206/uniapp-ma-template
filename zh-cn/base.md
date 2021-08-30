@@ -13,10 +13,6 @@ publicPath: './',
 ```
 
 ```javascript
-publicPath: '/app/',
-```
-
-```javascript
 const IS_PROD = ['production'].includes(process.env.NODE_ENV)
 
 module.exports = {
