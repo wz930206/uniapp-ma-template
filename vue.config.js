@@ -5,7 +5,7 @@ const name = 'uni app template'
 // 生产环境，测试和正式
 const IS_PROD = ['production'].includes(process.env.NODE_ENV)
 const devServerPort = 9527
-
+const proxyTarget = process.env.NODE_ENV === "development" ? 'http://localhost:10900/' : '/';
 module.exports = {
 	lintOnSave: !IS_PROD,
 	productionSourceMap: false,
@@ -18,12 +18,11 @@ module.exports = {
 			errors: true
 		},
 		// proxy: {
-		//   [process.env.VUE_APP_BASE_API]: {
-		//     target: `http://localhost:${mockServerPort}/mock-api/v1`,
-		//     changeOrigin: true, // needed for virtual hosted sites
-		//     ws: true, // proxy websockets
+		//   '/rest': {
+		//     target: proxyTarget,       //后端接口测试环境地址  配nginx 时使用
+		//     changeOrigin: true,//是否允许跨越
 		//     pathRewrite: {
-		//       ['^' + process.env.VUE_APP_BASE_API]: ''
+		//       '^/rest': '/rest',      //重写 不配nginx 时使用
 		//     }
 		//   }
 		// }

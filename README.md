@@ -74,7 +74,7 @@ VUE_APP_ENV = 'production'
 
 
 #### 使用组件
-
+### <span id="thorui">✅ thorui 组件按需加载 </span>
 项目在 `src/components/thorui` 下统一管理组件，可查看文档 [](https://thorui.cn/doc/docs/introduce.html)
 
 [▲ 回顶部](#top)
@@ -103,3 +103,99 @@ uniapp-ma-template 所有全局样式都在 `@/src/styles` 目录下设置
 │   │   ├── mixin.less               # 全局mixin
 │   │   └── _variables.less           # 全局变量
 ```
+[▲ 回顶部](#top)
+
+### <span id="vuex">✅ Vuex 状态管理</span>
+
+目录结构
+
+```bash
+├── store
+│   ├── modules
+│   │   └── user.js
+│   ├── index.js
+│   ├── getters.js
+```
+
+`main.js` 引入
+
+```javascript
+import Vue from 'vue'
+import App from './App.vue'
+import store from './store'
+new Vue({
+  el: '#app',
+  router,
+  store,
+  render: h => h(App)
+})
+```
+
+[▲ 回顶部](#top)
+
+### <span id="alias">✅ 配置 alias 别名 </span>
+
+```javascript
+const path = require('path')
+const resolve = dir => path.join(__dirname, dir)
+
+module.exports = {
+  chainWebpack: config => {
+    // 添加别名
+    config.resolve.alias
+      .set('@', resolve('src'))
+  }
+}
+```
+
+[▲ 回顶部](#top)
+
+### <span id="proxy">✅ 配置 proxy 跨域 </span>
+
+如果你的项目需要跨域设置，你需要打来 `vue.config.js` `proxy` 注释 并且配置相应参数
+
+```javascript
+module.exports = {
+  devServer: {
+    // ....
+    proxy: {
+      '/rest': {
+        target: proxyTarget,       //后端接口测试环境地址  配nginx 时使用
+        changeOrigin: true,//是否允许跨越
+        pathRewrite: {
+          '^/rest': '/rest',      //重写 不配nginx 时使用
+        }
+      }
+    }
+  }
+}
+```
+
+使用 例如: `src/api/user.js`
+
+[▲ 回顶部](#top)
+
+### <span id="console">✅ 去掉 console.log </span>
+
+保留了测试环境和本地环境的 `console.log`
+
+在 vue.config.js 中配置
+
+```javascript
+// 获取 VUE_APP_ENV 非 NODE_ENV，测试环境依然 console
+const IS_PROD = ['production'].includes(process.env.VUE_APP_ENV)
+
+module.exports = {
+  configureWebpack: config => {
+  	config.optimization.minimizer[0].options.terserOptions.compress.drop_console = IS_PROD,
+  }
+}
+```
+
+[▲ 回顶部](#top)
+
+### <span id="pettier">✅ Eslint + Pettier 统一开发规范 </span>
+VScode （版本 1.47.3）安装 `eslint` `prettier` `vetur` 插件 `.vue` 文件使用 vetur 进行格式化，其他使用`prettier`,后面会
+专门写个如何使用配合使用这三个玩意
+
+详细配置步骤可查看此博客 [](https://blog.csdn.net/wz_coming/article/details/119996186)
