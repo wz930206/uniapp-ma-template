@@ -1,7 +1,8 @@
 const path = require('path')
 const resolve = dir => path.join(__dirname, dir)
+const defaultSettings = require('./src/config/index.js')
 // page title
-const name = 'uni app template'
+const name = defaultSettings.title || 'uni app template'
 // 生产环境，测试和正式
 const IS_PROD = ['production'].includes(process.env.NODE_ENV)
 const devServerPort = 9527
@@ -17,15 +18,15 @@ module.exports = {
 			warnings: false,
 			errors: true
 		},
-		// proxy: {
-		//   '/rest': {
-		//     target: proxyTarget,       //后端接口测试环境地址  配nginx 时使用
-		//     changeOrigin: true,//是否允许跨越
-		//     pathRewrite: {
-		//       '^/rest': '/rest',      //重写 不配nginx 时使用
-		//     }
-		//   }
-		// }
+		proxy: {
+		  '/rest': {
+		    target: proxyTarget,       //后端接口测试环境地址  配nginx 时使用
+		    changeOrigin: true,//是否允许跨越
+		    pathRewrite: {
+		      '^/rest': '/rest',      //重写 不配nginx 时使用
+		    }
+		  }
+		}
 	},
 	pluginOptions: {
 		'style-resources-loader': {
