@@ -135,16 +135,16 @@
           index: Number(this.index),
         });
       },
-      bindgetuserinfo({ detail = {}} = {}) {
+      bindgetuserinfo({ detail = {} } = {}) {
         this.$emit('getuserinfo', detail);
       },
-      bindcontact({ detail = {}} = {}) {
+      bindcontact({ detail = {} } = {}) {
         this.$emit('contact', detail);
       },
-      bindgetphonenumber({ detail = {}} = {}) {
+      bindgetphonenumber({ detail = {} } = {}) {
         this.$emit('getphonenumber', detail);
       },
-      binderror({ detail = {}} = {}) {
+      binderror({ detail = {} } = {}) {
         this.$emit('error', detail);
       },
       getShadowClass: function(type, shadow, plain) {

@@ -7,7 +7,7 @@
       v-if="title"
       class="tui-list-title"
       :style="{ color: color, fontSize: size + 'rpx', lineHeight: 30 + 'rpx' }"
-    >{{ title }}</view
+      >{{ title }}</view
     >
     <view class="tui-list-content" :class="[unlined ? 'tui-border-' + unlined : '']">
       <slot />

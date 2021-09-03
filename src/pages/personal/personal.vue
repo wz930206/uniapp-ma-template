@@ -5,27 +5,26 @@
       <div class="center">
         <div class="logo" />
         <div class="title">uniapp H5开发模板</div>
-		<div class="item">项目作者: ur home</div>
+        <div class="item">项目作者: ur home</div>
         <div class="item">
           <h2>项目地址:</h2>
           <a href="https://github.com/wz930206/uniapp-ma-template.git"
-          >https://github.com/wz930206/uniapp-ma-template.git</a
+            >https://github.com/wz930206/uniapp-ma-template.git</a
           >
         </div>
-		<div class="item">
-		  <h2>Eslint+Stylelint+Pettier详细配置</h2>
-		  <a href="https://blog.csdn.net/wz_coming/article/details/119996186"
-		  >https://blog.csdn.net/wz_coming/article/details/119996186</a
-		  >
-		</div>
+        <div class="item">
+          <h2>Eslint+Stylelint+Pettier详细配置</h2>
+          <a href="https://blog.csdn.net/wz_coming/article/details/119996186"
+            >https://blog.csdn.net/wz_coming/article/details/119996186</a
+          >
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-  };
+  export default {};
 </script>
 <style lang="less" scoped>
   .about-container {

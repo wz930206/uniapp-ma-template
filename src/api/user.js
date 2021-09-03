@@ -6,7 +6,7 @@ const url = {
 
 export function getInfo(data) {
   return http({
-    url: url.list,
+    url: url.info,
     method: 'GET',
     data,
   });

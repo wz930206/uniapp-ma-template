@@ -19,13 +19,13 @@ module.exports = {
 			errors: true
 		},
 		proxy: {
-		  '/rest': {
-		    target: proxyTarget,       //后端接口测试环境地址  配nginx 时使用
-		    changeOrigin: true,//是否允许跨越
-		    pathRewrite: {
-		      '^/rest': '/rest',      //重写 不配nginx 时使用
-		    }
-		  }
+			'/rest': {
+				target: proxyTarget, // 后端接口测试环境地址  配nginx 时使用
+				changeOrigin: true, // 是否允许跨越
+				pathRewrite: {
+					'^/rest': '/rest', // 重写 不配nginx 时使用
+				}
+			}
 		}
 	},
 	pluginOptions: {
@@ -40,13 +40,13 @@ module.exports = {
 	},
 	configureWebpack: config => {
 		config.optimization.minimizer[0].options.terserOptions.compress.drop_console = IS_PROD,
-			config.externals = {
-				name: name,
-				resolve: {
-					alias: {
-						'@': resolve('src')
-					}
+		config.externals = {
+			name: name,
+			resolve: {
+				alias: {
+					'@': resolve('src')
 				}
 			}
+		},
 	}
 }
