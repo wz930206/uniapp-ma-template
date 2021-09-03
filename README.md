@@ -17,11 +17,13 @@
 手机扫码查看
 
 
-#### 关注我的知乎，掘金
+#### 关注我CSDN
 
+[开箱即用 vue-cli4 uniapp Webpack4 移动端框架方案](https://blog.csdn.net/wz_coming/article/details/120075677)  
 
 #### 鸣谢 ​
 
+[ThorUI](https://github.com/dingyong0214/ThorUI)
 
 #### 贡献代码
 
@@ -29,3 +31,4 @@
 
 #### 如何找到失散已久的组织？
 
+关注服务号ur home：回复“加群”即可加
