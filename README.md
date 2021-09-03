@@ -195,7 +195,6 @@ module.exports = {
 [▲ 回顶部](#top)
 
 ### <span id="pettier">✅ Eslint + Stylelint + Pettier  统一开发规范 </span>
-VScode （版本 1.47.3）安装 `eslint` `prettier` `vetur` 插件 `.vue` 文件使用 vetur 进行格式化，其他使用`prettier`,后面会
-专门写个如何使用配合使用这三个玩意
+VScode （版本 1.47.3）安装 `eslint` `prettier` `vetur` 插件 `.vue` 文件使用 vetur 进行格式化，其他使用`prettier`
 
 详细配置步骤可查看此博客 [csdn](https://blog.csdn.net/wz_coming/article/details/119996186)
