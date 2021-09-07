@@ -38,8 +38,7 @@ module.exports = {
 			]
 		}
 	},
-	configureWebpack: config => {
-		config.optimization.minimizer[0].options.terserOptions.compress.drop_console = IS_PROD,
+	configureWebpack: config =>  {
 		config.externals = {
 			name: name,
 			resolve: {
@@ -47,6 +46,12 @@ module.exports = {
 					'@': resolve('src')
 				}
 			}
-		},
+		};
+		if (process.env.NODE_ENV === 'production') {
+      // 为生产环境修改配置...
+			config.optimization.minimizer[0].options.terserOptions.compress.drop_console = IS_PROD;
+    } else {
+      // 为开发环境修改配置...
+    }
 	}
-}
+};

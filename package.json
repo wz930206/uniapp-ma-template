@@ -1,5 +1,5 @@
 {
-  "name": "uni-app-template",
+  "name": "uniapp-ma-template",
   "version": "1.0.0",
   "private": false,
   "scripts": {
@@ -93,6 +93,7 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "vue-cli-plugin-style-resources-loader": "~0.1.4",
+    "vue-eslint-parser": "^7.11.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
