@@ -25,7 +25,11 @@ cd uniapp-ma-template
 
 npm install
 
+Web端
 npm run serve
+
+小程序端
+使用HBuilder
 ```
 
 - √ Vue-cli4
@@ -202,3 +206,9 @@ module.exports = {
 VScode （版本 1.47.3）安装 `eslint` `prettier` `vetur` 插件 `.vue` 文件使用 vetur 进行格式化，其他使用`prettier`
 
 详细配置步骤可查看此博客 [csdn](https://blog.csdn.net/wz_coming/article/details/119996186)
+
+## 交流
+
+| 微信  |
+| ------------- |
+|<img src="https://ur-home.oss-cn-shanghai.aliyuncs.com/weixin/wx_code.jpg" width="300px"><div align="center"> 添加的时候备注上 `urhome`  </div>|
