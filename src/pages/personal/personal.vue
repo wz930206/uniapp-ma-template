@@ -24,7 +24,17 @@
 </template>
 
 <script>
-  export default {};
+  import { getInfo } from '@/api/user.js';
+  export default {
+	  onShow() {
+	  	this.getInfo()
+	  },
+	  methods: {
+		  async getInfo() {
+			  await getInfo();
+		  }
+	  }
+  };
 </script>
 <style lang="less" scoped>
   .about-container {

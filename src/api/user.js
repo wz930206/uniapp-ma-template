@@ -1,13 +1,12 @@
 import http from '@/utils/http';
 
 const url = {
-  info: 'rest/info',
+  info: 'rest/post/ma/list',
 };
 
-export function getInfo(data) {
+export const getInfo = () => {
   return http({
     url: url.info,
     method: 'GET',
-    data,
   });
 }
