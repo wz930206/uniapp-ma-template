@@ -1,6 +1,6 @@
 # uniapp-cli-mobile-template
 
-通过 vue-cli 创建 uni-app 项目
+通过 vue-cli 创建 uni-app 项目，优势可通过Jenkins部署一键发布
 
 [官方文档][https://uniapp.dcloud.net.cn/quickstart-cli.html]
 
