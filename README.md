@@ -1,4 +1,4 @@
-# uniapp-ma-template
+# uniapp-cli-mobile-template
 
 通过 vue-cli 创建 uni-app 项目
 
