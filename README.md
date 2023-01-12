@@ -1,5 +1,9 @@
 # uniapp-ma-template
 
+通过 vue-cli 创建 uni-app 项目
+
+[官方文档][https://uniapp.dcloud.net.cn/quickstart-cli.html]
+
 基于 vue-cli4.0 + Webpack 4 + thorui-uni + less + 请求 封装，构建手机端模板脚手架
 
 ### 在线文档
